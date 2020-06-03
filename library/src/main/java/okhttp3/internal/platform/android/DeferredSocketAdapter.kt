@@ -55,7 +55,7 @@ class DeferredSocketAdapter(private val socketPackage: String) : SocketAdapter {
             try {
                 var possibleClass: Class<in SSLSocket> = actualSSLSocketClass.javaClass
                 while (possibleClass.name != "$socketPackage.OpenSSLSocketImpl") {
-                    possibleClass = possibleClass.superclass
+                    possibleClass = possibleClass.superclass as Class<in SSLSocket>
 
                     if (possibleClass == null) {
                         throw AssertionError(
