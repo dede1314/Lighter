@@ -1,4 +1,4 @@
-package com.life.lighter.ui.data.model;
+package com.life.lighter.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

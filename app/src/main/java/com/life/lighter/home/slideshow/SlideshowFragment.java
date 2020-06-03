@@ -1,4 +1,4 @@
-package com.life.lighter.ui.slideshow;
+package com.life.lighter.home.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

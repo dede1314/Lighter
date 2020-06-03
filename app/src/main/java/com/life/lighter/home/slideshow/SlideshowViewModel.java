@@ -1,4 +1,4 @@
-package com.life.lighter.ui.slideshow;
+package com.life.lighter.home.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

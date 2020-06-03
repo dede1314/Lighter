@@ -1,4 +1,4 @@
-package com.life.lighter.ui.data;
+package com.life.lighter.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

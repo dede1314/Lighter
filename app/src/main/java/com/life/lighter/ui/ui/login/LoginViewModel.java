@@ -6,10 +6,10 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import com.life.lighter.ui.data.LoginRepository;
-import com.life.lighter.ui.data.Result;
-import com.life.lighter.ui.data.model.LoggedInUser;
-import com.life.lighter.ui.R;
+import com.life.lighter.R;
+import com.life.lighter.data.LoginRepository;
+import com.life.lighter.data.Result;
+import com.life.lighter.data.model.LoggedInUser;
 
 public class LoginViewModel extends ViewModel {
 

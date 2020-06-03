@@ -1,6 +1,6 @@
-package com.life.lighter.ui.data;
+package com.life.lighter.data;
 
-import com.life.lighter.ui.data.model.LoggedInUser;
+import com.life.lighter.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

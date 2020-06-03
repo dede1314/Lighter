@@ -22,11 +22,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.life.lighter.ui.R;
-import com.life.lighter.ui.ui.login.LoginViewModel;
-import com.life.lighter.ui.ui.login.LoginViewModelFactory;
+import com.life.lighter.R;
 
-public class LoginActivity extends AppCompatActivity {
+
+public class BaseInfoActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 

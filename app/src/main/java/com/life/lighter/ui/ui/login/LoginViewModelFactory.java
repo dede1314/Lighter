@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import com.life.lighter.ui.data.LoginDataSource;
-import com.life.lighter.ui.data.LoginRepository;
+import com.life.lighter.data.LoginDataSource;
+import com.life.lighter.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
