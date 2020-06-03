@@ -39,6 +39,9 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     implementation project(":library")
+    implementation 'androidx.room:room-runtime:2.2.5'
+
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
 //    implementation("com.squareup.okhttp3:okhttp:4.2.0")
 
 
