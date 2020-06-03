@@ -1,4 +1,4 @@
-package com.life.lighter.ui.database.Entity;
+package com.life.lighter.database.Entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

@@ -1,4 +1,4 @@
-package com.life.lighter.ui.database;
+package com.life.lighter.database;
 
 /**
  * @author zhoujishi

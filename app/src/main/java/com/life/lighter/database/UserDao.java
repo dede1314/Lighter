@@ -1,11 +1,11 @@
-package com.life.lighter.ui.database;
+package com.life.lighter.database;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.life.lighter.ui.database.Entity.WeightInfo;
+import com.life.lighter.database.Entity.WeightInfo;
 
 import java.util.List;
 

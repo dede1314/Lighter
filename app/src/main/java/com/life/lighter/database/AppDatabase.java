@@ -1,4 +1,4 @@
-package com.life.lighter.ui.database;
+package com.life.lighter.database;
 
 import android.content.Context;
 
@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.life.lighter.ui.database.Entity.WeightInfo;
+import com.life.lighter.database.Entity.WeightInfo;
 
 /**
  * @author zhoujishi

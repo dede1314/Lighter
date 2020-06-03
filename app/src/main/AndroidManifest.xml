@@ -3,13 +3,32 @@
     package="com.life.lighter">
 
     <application
+        android:name=".RealApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".RealApplication"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.base.BaseActivity"></activity>
+        <activity
+            android:name=".ui.TargetActivity"
+            android:label="@string/title_activity_target"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.BMIActivity"
+            android:label="@string/title_activity_b_m_i"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.login.BaseInfoActivity"
+            android:label="@string/title_activity_base_info" />
+        <activity
+            android:name=".RecordActivity"
+            android:label="@string/title_activity_record"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
