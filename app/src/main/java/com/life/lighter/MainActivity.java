@@ -15,12 +15,18 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.life.lighter.test.GetRequest_Interface;
 
 import java.io.IOException;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 test();
+                test1();
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
@@ -79,5 +86,31 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void test1(){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://fanyi.youdao.com/") //设置网络请求的Url地址
+                .addConverterFactory(GsonConverterFactory.create()) //设置数据解析器
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .build();
+
+        GetRequest_Interface request = retrofit.create(GetRequest_Interface.class);
+        //对 发送请求 进行封装
+        Call<Object> call = request.getCall("");
+        call.enqueue(new Callback<Object>() {
+            //请求成功时回调
+
+            @Override
+            public void onResponse(Call<Object> call, retrofit2.Response<Object> response) {
+
+            }
+
+            //请求失败时候的回调
+            @Override
+            public void onFailure(Call<Object> call, Throwable throwable) {
+                System.out.println("连接失败");
+            }
+        });
     }
 }

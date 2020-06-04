@@ -1,0 +1,27 @@
+1 目的
+想减肥，就要记录体重变化。
+2 技术方案
+数据库  room
+网络库：okhttp+retrofit+rxjava
+图片库：Glide
+项目架构：mvvm
+语言：java+kotlin
+图形：MPAndroidChart
+权限：easypermission
+
+崩溃收集+热更新：bugly
+架构组件jetpack
+日志库：
+尽量源码引进
+
+
+3 功能
+第一次启动记录基本信息，体重单位，当前体重，身高.
+
+
+
+
+
+
+
+

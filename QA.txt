@@ -1,0 +1,8 @@
+Q&A
+
+1 okhttp 导包正常，但是编译错误
+  okhttp类存在错误,okhttp 通过源码引入，引入的okhttp 版本是4.2.0，使用的kotlin，加入kotlin相关的错误减少，方向对了。
+
+2 implemention and api,
+   需要API才能引用到
+
