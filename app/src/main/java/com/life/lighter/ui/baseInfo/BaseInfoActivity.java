@@ -1,4 +1,4 @@
-package com.life.lighter.ui.ui.login;
+package com.life.lighter.ui.baseInfo;
 
 import android.app.Activity;
 
@@ -9,7 +9,6 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,16 +22,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.life.lighter.R;
+import com.life.lighter.ui.base.BaseMVVMActivity;
+import com.life.lighter.ui.base.BaseViewModel;
 
 
-public class BaseInfoActivity extends AppCompatActivity {
+public class BaseInfoActivity extends BaseMVVMActivity {
 
     private LoginViewModel loginViewModel;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_info);
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
@@ -118,6 +118,11 @@ public class BaseInfoActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public int layoutID() {
+        return R.layout.activity_base_info;
+    }
+
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
@@ -126,5 +131,10 @@ public class BaseInfoActivity extends AppCompatActivity {
 
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public BaseViewModel obtainViewModel() {
+        return null;
     }
 }

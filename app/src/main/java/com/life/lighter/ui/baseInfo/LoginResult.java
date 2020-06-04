@@ -1,6 +1,8 @@
-package com.life.lighter.ui.ui.login;
+package com.life.lighter.ui.baseInfo;
 
 import androidx.annotation.Nullable;
+
+import com.life.lighter.ui.ui.login.LoggedInUserView;
 
 /**
  * Authentication result : success (user details) or error message.

@@ -1,4 +1,4 @@
-package com.life.lighter.ui.ui.login;
+package com.life.lighter.ui.baseInfo;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -10,6 +10,7 @@ import com.life.lighter.R;
 import com.life.lighter.data.LoginRepository;
 import com.life.lighter.data.Result;
 import com.life.lighter.data.model.LoggedInUser;
+import com.life.lighter.ui.ui.login.LoggedInUserView;
 
 public class LoginViewModel extends ViewModel {
 

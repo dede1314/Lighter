@@ -1,4 +1,4 @@
-package com.life.lighter.ui.ui.login;
+package com.life.lighter.ui.baseInfo;
 
 import androidx.annotation.Nullable;
 
